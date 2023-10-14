@@ -1,0 +1,308 @@
+*{
+    cursor: pointer;
+    box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+    background: #8888;
+    background-size: cover;
+    margin-left: 5px;
+    border-right : 1px solid white;
+    /*box-shadow: 1px 2px 1px  green;*/
+   /* margin-top: 2000px;*/
+}
+/*header{
+   
+    border-bottom: 1px solid grey;
+    box-shadow: 3px 2px 1px  whitesmoke;
+    }
+    p{
+        text-align: center;
+        font-size: 15px;
+    }
+*/
+.header{
+    margin: 0;
+    padding: 80px;
+    text-align: center;
+    background: navajowhite;
+    color: green;
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 10px 100px black;
+}
+.header h3 {
+    font-size: 70px;
+    font-weight: lighter;
+    margin: 20px 20px;
+    text-shadow: 30px 150px 3px rgba(0, 0, 0, 0.05);
+    line-height: 60px;
+    letter-spacing: 5px;
+
+}
+.header p{
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+.navbar{
+    overflow: hidden;
+    background-color: #333333
+}
+.navbar a {
+    font-family: Georgia;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-style: italic;
+    float: left;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+.navbar a .right{
+    float: right;
+}
+.navbar a:hover{
+    background-color:rgba(15, 60, 50, 0.8);
+    color: whitesmoke;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.main{
+    flex: 70%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+@media screen and ( max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+@media screen and ( max-width: 500px){
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+h1{
+    color: #008470;
+    background-color:rgba(12, 12, 12, 0.6);
+    font-family: fantasy;
+    /*font-size: 7rem;*/
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    box-shadow: 5px 7px 10px darkslategrey;
+    width: 600px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 55px;
+}
+ 
+h1:hover {
+   transition: 60s;
+transform: scale(1.1);
+}
+/*button{
+
+}*/
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .contain img{
+     background-color: #888888;
+    width: 300px;
+    height: 350px;
+    margin: 8px;
+    color: blue;
+    box-shadow: 15px 35px 30px grey;
+    cursor: pointer;
+}
+ .contain img:hover {
+transition: 1s;
+transform: scale(1.05);
+
+}
+ h2{
+    
+    color: #008470;
+      font-family: fantasy;
+    font-size: 3em;
+   border-bottom: 2px solid grey;
+    border-right: 3px solid grey;
+        box-shadow: 5px 7px 10px darkslategrey;
+    width: 700px;
+    text-align: center;  
+    cursor: pointer;  
+}
+h2:hover {
+   transition: 60s;
+transform: scale(1.1);
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    padding-bottom: 0px;
+}
+.footer{
+    font-size: ;
+    font-style: times n;
+    padding-top: 50px;
+    text-align: center;
+    background: navajowhite;
+}
+.contact{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: right;
+
+}
+.contact p{
+
+    text-decoration:underline ;
+    text-transform: uppercase ;
+    width: 1200px;
+}
+.contact li {
+    list-style: none;
+    font-size: 20px;
+}
+.robots {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+     background-color: rgba(15, 28, 40, 0.8);
+}
+
+.head { 
+    width: 200px; 
+    margin: 20px auto; 
+    height: 150px; 
+    border-radius: 200px 200px 0 0; 
+    margin-bottom: 10px;
+} 
+
+.eyes {
+    display: flex;
+}
+
+.head:hover {
+    width: 300px;
+    transition: 2s all;
+}
+
+.upper_body { 
+    width: 300px; 
+    height: 150px;
+    display: flex; 
+} 
+.upper_body:hover { 
+    width: 350px;
+    margin: 0 auto; 
+    transition: 1s all;
+  height: 150px;
+    display: flex; 
+} 
+
+.left_arm, .right_arm { 
+    width: 40px; 
+    height: 125px;
+    border-radius: 100px; 
+} 
+
+.left_arm { 
+    margin-right: 10px; 
+} 
+
+.right_arm { 
+    margin-left: 10px; 
+} 
+
+.torso { 
+    width: 200px; 
+    height: 200px;
+    border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+    width: 200px; 
+    height: 200px;
+    /* This is another useful property. Hmm what do you think it does?
+    margin: 0 auto;
+    display: flex; 
+} 
+
+.left_leg, .right_leg { 
+    width: 40px; 
+    height: 120px;
+    border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+    margin-left: 45px; 
+} 
+
+.left_leg:hover {
+/*  -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);*/
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+    margin-left: 30px; 
+}
+
+.left_eye, .right_eye { 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 15px; 
+    background-color: white;  
+} 
+
+.left_eye { 
+     /*These properties are new and you haven't encountered
+    in this course. Check out CSS Tricks to see what it does! */
+    position: relative; 
+    top: 100px; 
+    left: 40px; 
+} 
+
+.right_eye { 
+    position: relative; 
+    top: 100px; 
+    left: 120px; 
+}
+
+
+
+
+
+/*.models{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}*/
